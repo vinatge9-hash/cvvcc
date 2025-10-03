@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brew & Beans — Menu</title>
+  <meta name="description" content="Explore Brew & Beans menu: espresso drinks, pour-overs, pastries, and seasonal specialties." />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-[OpenSans] text-gray-700 bg-white">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="index.html" class="text-2xl font-bold font-[Montserrat] text-[#3C2415]">Brew & Beans</a>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="index.html" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-[#F3E2D0]">Home</a>
+            <a href="menu.html" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-[#F3E2D0]">Menu</a>
+            <a href="about.html" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-[#F3E2D0]">Our Story</a>
+            <a href="contact.html" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-[#F3E2D0]">Contact</a>
+          </div>
+        </div>
+        <div class="md:hidden"><button id="mobile-menu-button" class="text-[#3C2415]"><svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-label="Open menu"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg></button></div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white">
+      <a href="index.html" class="block px-4 py-2">Home</a>
+      <a href="menu.html" class="block px-4 py-2">Menu</a>
+      <a href="about.html" class="block px-4 py-2">Our Story</a>
+      <a href="contact.html" class="block px-4 py-2">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-screen bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/1790582/pexels-photo-1790582.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');">
+    <div class="absolute inset-0 bg-black opacity-60"></div>
+    <div class="relative z-10 flex items-center justify-center h-full px-4 text-center">
+      <div class="max-w-3xl text-white">
+        <h1 class="text-4xl md:text-6xl font-bold font-[Montserrat] mb-4">Menu</h1>
+        <p class="text-lg md:text-2xl mb-8 font-[OpenSans]">Explore our range of beverages, pastries, and seasonal specials.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Grid -->
+  <section class="py-12 px-4">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Espresso Section -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <h2 class="text-xl font-semibold font-[Montserrat] text-[#3C2415] mb-3">Espresso & Shots</h2>
+        <div class="space-y-4">
+          <div class="flex justify-between items-center">
+            <span>Espresso</span><span>$3.00</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <span>Double Espresso</span><span>$4.00</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <span>Ristretto</span><span>$3.50</span>
+          </div>
+        </div>
+      </div>
+      <!-- Drip & Pour-Overs -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <h2 class="text-xl font-semibold font-[Montserrat] text-[#3C2415] mb-3">Pour-Overs & Filters</h2>
+        <div class="space-y-4">
+          <div class="flex justify-between items-center"><span>Pour-Over</span><span>$4.50</span></div>
+          <div class="flex justify-between items-center"><span>Equator Filter</span><span>$5.00</span></div>
+          <div class="flex justify-between items-center"><span>Cold Brew</span><span>$4.75</span></div>
+        </div>
+      </div>
+      <!-- Pastries -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <h2 class="text-xl font-semibold font-[Montserrat] text-[#3C2415] mb-3">Pastries & Bites</h2>
+        <div class="space-y-4">
+          <div class="flex justify-between items-center"><span>Butter Croissant</span><span>$3.25</span></div>
+          <div class="flex justify-between items-center"><span>almond croissant</span><span>$3.75</span></div>
+          <div class="flex justify-between items-center"><span>Blueberry Muffin</span><span>$3.50</span></div>
+        </div>
+      </div>
+      <!-- Seasonal -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <h2 class="text-xl font-semibold font-[Montserrat] text-[#3C2415] mb-3">Seasonal Special</h2>
+        <p class="text-sm text-gray-700">Ask about our rotating seasonal drink and pastry pairings.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#3C2415] text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <h3 class="text-2xl font-bold mb-2">Brew & Beans</h3>
+        <p class="text-sm">Your neighborhood coffee haven, serving artisanal brews and fresh pastries daily.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold">Hours</h4>
+        <p class="text-sm">Mon–Fri: 6:00 AM – 8:00 PM</p>
+        <p class="text-sm">Sat–Sun: 7:00 AM – 9:00 PM</p>
+      </div>
+      <div>
+        <h4 class="font-semibold">Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="menu.html" class="hover:underline">Menu</a></li>
+          <li><a href="contact.html" class="hover:underline">Reservations</a></li>
+          <li><a href="index.html" class="hover:underline">Home</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold">Contact</h4>
+        <p class="text-sm">hello@brewbeans.example</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    }
+  </script>
+</body>
+</html>
